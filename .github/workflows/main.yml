@@ -6,6 +6,7 @@ on:
     branches:  
     - Stage   
 
+
 jobs:  
   deploy_lambda:
     runs-on: ubuntu-latest  
