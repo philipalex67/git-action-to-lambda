@@ -1,7 +1,7 @@
 exports.handler = async (event) => {
    const response = {
        statusCode: 200,
-       body: JSON.stringify('Updated Through Github Action Prod v2 Demo by philip '),
+       body: JSON.stringify('Updated Through Github Action Prod Demo v3 by philip '),
    };
    return response;
 };
