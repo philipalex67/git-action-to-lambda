@@ -6,6 +6,7 @@ on:
     branches:  
     - Dev   
 
+
 jobs:  
   deploy_lambda:
     runs-on: ubuntu-latest  
@@ -30,5 +31,5 @@ jobs:
       - name: deploy
         run: |
           zip -j deploy.zip ./* 
-          aws lambda update-function-code --function-name=test --zip-file=fileb://deploy.zip 
+          aws lambda update-function-code --function-name=stage --zip-file=fileb://deploy.zip 
 
