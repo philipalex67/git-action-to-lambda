@@ -4,7 +4,7 @@ name: Deploy
 on:  
   push:   
     branches:  
-    - stage   
+    - Stage   
 
 jobs:  
   deploy_lambda:
