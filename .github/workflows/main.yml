@@ -2,9 +2,10 @@
 name: Deploy 
 
 on:  
-  push:   
+  pull_request:   
     branches:  
-    - Prod   
+    - Stage   
+
 
 jobs:  
   deploy_lambda:
@@ -30,5 +31,5 @@ jobs:
       - name: deploy
         run: |
           zip -j deploy.zip ./* 
-          aws lambda update-function-code --function-name=test --zip-file=fileb://deploy.zip 
+          aws lambda update-function-code --function-name=stage --zip-file=fileb://deploy.zip 
 
