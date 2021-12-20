@@ -5,7 +5,7 @@ exports.handler = async (event) => {
 
 
        body: JSON.stringify('Updated Through Github Action Dev Demo after changing branch protection  by philip alexander'),
->>>>>>> 2596953 (Test commit 3)
+
    };
    return response;
 };
