@@ -4,7 +4,7 @@ exports.handler = async (event) => {
 
 
 
-       body: JSON.stringify('Updated Through Github Action Dev Demo on 24th v2  after changing branch protection  by philip alexander'),
+       body: JSON.stringify('Updated Through Github Action Dev Demo on 24th v3  after changing branch protection  by philip alexander'),
 
    };
    return response;
